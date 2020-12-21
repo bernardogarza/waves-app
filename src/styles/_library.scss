@@ -1,0 +1,93 @@
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25rem;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 50px rgb(235, 235, 235);
+  overflow: auto;
+  overflow-x: auto;
+  h2 {
+    padding: 2rem;
+  }
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.library-song {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  img {
+    width: 30%;
+  }
+  &:hover {
+    box-shadow: 2px 2px 15px rgba(75, 38, 161, 0.205);
+    background: rgba(75, 38, 161, 0.205);
+  }
+}
+
+.song-description {
+  padding-left: 1rem;
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border: transparent;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.selected {
+  background: rgb(198, 177, 255);
+}
+
+.active-library {
+  transform: translatex(0%);
+  -webkit-transform: translatex(0%);
+  -moz-transform: translatex(0%);
+  -ms-transform: translatex(0%);
+  -o-transform: translatex(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}

@@ -216,7 +216,7 @@ export const data = () => {
       active: false,
     },
     {
-      name: 'The Lord Of The Old ScoolIntroducng The Old Testament Style',
+      name: 'Introducing The Old Testament Style',
       cover:
         'https://freemusicarchive.org/image?file=images%2Falbums%2FDJ_Black_Negro_-_Thunder_Doom_-_20131207122410967.jpg&width=290&height=290&type=image',
       artist: 'The Lord Of The Old Scool',
