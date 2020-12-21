@@ -8,7 +8,7 @@ This is a simple music player app that I built using only react and hooks.
 
 ## Live Demo
 
-> https://bernardogarza.github.io/waves-app/
+> https://waves-app-bg.netlify.app
 
 ## Screenshots
 
